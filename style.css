@@ -1,0 +1,444 @@
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+html {
+  font-size: 62.5%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1rem;
+  font-weight: 400;
+  color: white;
+  background-color: rgb(25, 25, 25);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  padding: 0 2rem;
+}
+
+/* --------------------NAVIGATION------------------------- */
+.navigation-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  padding: 2.5rem 0;
+  font-weight: 600;
+  color: #d1d0cf;
+  letter-spacing: 0.1rem;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+.navigation__logo {
+  width: 13%;
+}
+.navigation__icon {
+  display: flex;
+  gap: 2.5rem;
+}
+.navigation__icon__svg {
+  fill: white;
+  width: 30%;
+}
+.navigation__list {
+  display: flex;
+  gap: 3rem;
+}
+.navigation__list__flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.navigation__list__svg {
+  fill: #d1d0cf;
+  width: 20px;
+}
+/* --------------------FOOTER TOP------------------------- */
+.footer {
+  background-color: rgb(17, 17, 17);
+}
+.footer__top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+  column-gap: 2.5rem;
+  height: 75vh;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.footer__top__section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-top: 7rem;
+}
+.footer__top__title {
+  padding-bottom: 2rem;
+  font-size: 1.8rem;
+}
+.footer__top__logo {
+  width: 50%;
+}
+.footer__top--size {
+  font-size: 1.4rem;
+  color: #d1d0cf;
+}
+.footer__top__emailinput {
+  background-color: rgb(25, 25, 25);
+  border: 0;
+  padding: 1.5rem 2rem;
+  width: inherit;
+  border-radius: 5px;
+}
+.footer__top__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__top__button {
+  padding: 1.5rem 3rem;
+  width: 50%;
+  background-color: red;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+}
+.footer__top__service {
+  color: #d1d0cf;
+  font-weight: 400;
+}
+/* --------------------FOOTER BOTTOM------------------------- */
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.071);
+  max-width: 110rem;
+  margin: 0 auto;
+}
+.footer__bottom__img {
+  display: flex;
+  gap: 2rem;
+}
+.footer__bottom__img__item {
+  width: 40%;
+}
+.footer__bottom--size {
+  font-size: 1.4rem;
+  color: #d1d0cf;
+}
+.footer__bottom__list {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+.footer__bottom__description {
+  width: 80%;
+  line-height: 1.5;
+}
+.footer__bottom--flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.footer__bottom__description span {
+  color: red;
+}
+/* --------------------Top 10 Movies To Watch----------------------- */
+.card__top10 {
+  padding-top: 10rem;
+}
+.card__top10__img {
+  width: 14.2rem;
+  border-radius: 0.3rem;
+}
+
+.card__top10__list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10rem;
+  scroll-behavior: smooth;
+  gap: 8rem;
+  overflow: hidden;
+  position: relative;
+}
+.card__top {
+  max-width: 105rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.card__top10__item {
+  position: relative;
+}
+.card__top10__number {
+  font-size: 12rem;
+  font-weight: 900;
+  left: 70%;
+  bottom: 10%;
+  transition: 0.3s;
+  color: #ffffff;
+  position: absolute;
+}
+
+.card__title {
+  font-size: 2.1rem;
+  padding-bottom: 4rem;
+  font-weight: 400;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+.card__top10__number:hover {
+  transform: translate(0, -2rem);
+}
+
+.card__top10__svgleft {
+  position: absolute;
+  bottom: 60%;
+  left: -2%;
+}
+.card__top10__svgright {
+  position: absolute;
+  bottom: 60%;
+  right: -2%;
+}
+/* --------------------Your Fav Personality----------------------- */
+.card__fav {
+  padding-top: 10rem;
+}
+.card__fav__img {
+  width: 9.1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.3rem;
+}
+.card__fav__name {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.card__fav__skill {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.694);
+  font-weight: 400;
+}
+
+.card__fav__list {
+  max-width: 105rem;
+  margin: 0 auto;
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+.card__fav__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+/* --------------------Only on streamit----------------------- */
+
+.card__onlyon__img {
+  border-radius: 0.3rem;
+  width: 24.7rem;
+  height: 35.9rem;
+  z-index: -2;
+  position: relative;
+}
+.card__onlyon__item {
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+.card__onlyon__item:hover {
+  transform: translate3D(0, -20px, 0) scale(1.15);
+}
+
+.card__onlyon__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 1.5rem;
+}
+.card__onlyon__list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10rem;
+  position: relative;
+  gap: 2rem;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.card__only {
+  max-width: 105rem;
+  margin: 0 auto;
+  position: relative;
+}
+.card__onlyon__title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.card__onlyon__duration {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #d1d0cf;
+}
+.card__onlyon__imgdiv {
+  width: 24.7rem;
+  height: 35.9rem;
+  box-shadow: inset 0px -70px 600px 0px black;
+}
+.card__onlyon__svg {
+}
+
+.card__onlyon__svgleft {
+  position: absolute;
+  bottom: 60%;
+  left: 2%;
+}
+.card__onlyon__svgright {
+  position: absolute;
+  bottom: 60%;
+  right: 2%;
+}
+/* --------------------Hero Section----------------------- */
+
+/* .hero__main {
+  max-width: 105rem;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+}
+.hero__card {
+  background-color: white;
+  z-index: 999;
+}
+.hero__card__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.hero__card__list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 2.5rem;
+  gap: 2.5rem;
+}
+.hero__card__item {
+  width: 27.3rem;
+  height: 33rem;
+} */
+/* --------------------CARD CENTER------------------------- */
+.card__center {
+  background: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.164)),
+    url("https://wordpress.iqonic.design/product/wp/streamit/wp-content/uploads/2020/11/another-danger.jpg");
+  background-size: 100%;
+  object-fit: contain;
+}
+.card__center__main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 7rem 10rem;
+  gap: 8rem;
+  box-shadow: black inset 200px 0 200px 150px;
+}
+.card__center__slider__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+.card__center__slider__item {
+  width: 23.8rem;
+  height: 13.4rem;
+  background-image: url("https://wordpress.iqonic.design/product/wp/streamit/wp-content/uploads/2020/11/final-fantasy.jpg");
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  border-radius: 0.5rem;
+}
+.card__center__slider__item__title {
+  font-size: 2.1rem;
+}
+.card__center__slider__item__time {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #d1d0cf;
+}
+.card__center__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 57rem;
+}
+.card__center__content__main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  line-height: 2rem;
+}
+.card__center__content__genre {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #d1d0cf;
+}
+.card__center__content__title {
+  font-size: 5rem;
+}
+.card__center__content__time {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #d1d0cf;
+}
+.card__center__content__description {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #d1d0cf;
+}
+.card__center__content__button {
+  background-color: red;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 1.5rem 3rem;
+  width: 30%;
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+.card__center__slider__arrow {
+  /* position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 50%;
+  left: 40%; */
+}
+.card__center__slider__arrowup {
+  position: absolute;
+  left: 40%;
+  top: -6%;
+  scale: 1.2;
+}
+.card__center__slider__arrowdown {
+  position: absolute;
+  left: 40%;
+  bottom: -3%;
+  scale: 1.2;
+}
