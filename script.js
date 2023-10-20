@@ -5,6 +5,13 @@ const onlyOnLeftClick = document.querySelector(".card__onlyon__svgleft");
 const cardTop10 = document.querySelector(".card__top10__list");
 const top10RightClick = document.querySelector(".card__top10__svgright");
 const top10LeftClick = document.querySelector(".card__top10__svgleft");
+const cardCentre = document.querySelector(".card__center__slider__list");
+const cardCentreimg = document.querySelector(".card__center__slider__item");
+
+const navigationHomeButton = document.querySelector(".navigation__list__home");
+const navigationHome = document.querySelector(".navigation__home");
+
+const navigationList = document.querySelector(".navigation__list");
 
 let onlyonchildElementSize = 0;
 let top10childElementSize = 0;
@@ -131,7 +138,7 @@ top10LeftClick.addEventListener("click", () => {
 });
 const updateTop10 = () => {
   let htmlstring = "";
-  newmovieslist.forEach((movie) => {
+  newmovieslist.map((movie) => {
     if (movie.movie.value < 10) {
       htmlstring =
         htmlstring +
@@ -148,3 +155,35 @@ const updateTop10 = () => {
   cardTop10.innerHTML = htmlstring;
 };
 updateTop10();
+// ------------------------------CARD CENTER-----------------------------------
+// const updateCardCenter = async () => {
+//   let htmlstring = "";
+//   newmovieslist.map((movie) => {
+//     htmlstring =
+//       htmlstring +
+//       `<div class="card__center__slider__item">
+// <h1 class="card__center__slider__item__title">
+//   ${movie.movie.title}
+// </h1>
+// <h2 class="card__center__slider__item__time">${movie.movie.genres}</h2>
+// </div>`;
+//     // cardCentreimg.style.backgroundImage =
+//     //   "url(`https://wordpress.iqonic.design/product/wp/streamit/wp-content/uploads/2020/11/another-danger.jpg`)";
+//   });
+//   cardCentre.innerHTML = htmlstring;
+// };
+// updateCardCenter();
+
+// navigationHomeButton.addEventListener("mouseover", () => {
+//   navigationHome.classList.remove("hidden");
+//   navigationHomeButton.style.color = "red";
+//   navigationHomeButton.children.item(1).style.fill = "red";
+// });
+
+// navigationHome.addEventListener("mouseleave", () => {
+//   navigationHome.classList.add("hidden");
+//   navigationHomeButton.style.color = "#d1d0cf";
+//   navigationHomeButton.children.item(1).style.fill = "#d1d0cf";
+// });
+
+console.log(navigationList.children);
